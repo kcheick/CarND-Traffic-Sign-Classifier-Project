@@ -1,0 +1,16 @@
+
+
+no changes
+0.85782312963014284
+
+dropout 0.5 : tf.nn.dropout(conv1, 0.5)
+0.84965986421589412
+
+normalization: tf.nn.l2_normalize(x, dim=1), tf.nn.l2_normalize(x, dim=2)
+0.89909297081888939
+
+l2 regularization : loss_operation = tf.reduce_mean(loss_operation + conv1_b * tf.nn.l2_loss(conv1_W))
+0.75895691574836266
+
+greyscale : tf.image.rgb_to_grayscale(x)
+0.87210884386179399
